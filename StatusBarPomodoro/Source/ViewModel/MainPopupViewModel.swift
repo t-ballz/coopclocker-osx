@@ -53,6 +53,8 @@ class MainPopupViewModel : BaseViewModel
         return create
         { sink in
             
+            self.userName <~ "pressed"
+            
             Logger.log("Status indicator pressed.")
             
             sendCompleted(sink)

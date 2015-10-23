@@ -24,19 +24,15 @@ extension NSView
 // RX helpers
 
 infix operator <~ {}
-func <~<T: Any>(variable: Variable<T>, value: T)
+func <~<T>(variable: Variable<T>, value: T)
 {
     variable.next(value)
 }
 
-func <~<T: Any>(inout member: T, variable: Variable<T>) -> Disposable
+infix operator ~> {}
+func ~><T>(signal: Observable<T>, nextBlock:(T) -> ())
 {
-    return variable >- subscribeNext { member = $0 }
-}
-
-func <~<T: Any>(inout member: T, signal: Observable<T>) -> Disposable
-{
-    return signal >- subscribeNext { member = $0 }
+    signal >- subscribeNext(nextBlock)
 }
 
 extension NSButton

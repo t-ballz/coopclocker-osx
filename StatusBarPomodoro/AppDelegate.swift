@@ -15,6 +15,10 @@ class AppDelegate: NSObject, NSApplicationDelegate
 {
     @IBOutlet weak var window: NSWindow!
 
+    class var instance: AppDelegate {
+        return NSApplication.sharedApplication().delegate as! AppDelegate
+    }
+    
     // Due to an XCode bug, these do not link
     // NSVariableStatusItemLength = -1
     // NSSquareStatusItemLength = -2
@@ -35,13 +39,14 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
         if let button = statusItem.button
         {
-            button.imagePosition <~ self.statusItemViewModel.imagePosition
-            button.image <~ self.statusItemViewModel.image
-            button.alternateImage <~ self.statusItemViewModel.imageAlt
-            button.title <~ self.statusItemViewModel.title
-            button.rx_tap >- map { self.statusItemViewModel.buttonPressed(_sender: button) } >- subscribeNext
-            { next in
-                next >- subscribeCompleted { }
+            self.statusItemViewModel.imagePosition ~> { button.imagePosition = $0 }
+            self.statusItemViewModel.image ~> { button.image = $0 }
+            self.statusItemViewModel.imageAlt ~> { button.alternateImage = $0 }
+            self.statusItemViewModel.title ~> { button.title = $0 }
+            
+            button.bindToHandler(self.statusItemViewModel.buttonPressed) >- subscribeNext
+            { signal in
+                signal >- subscribeCompleted { }
             }
         }
     }
