@@ -10,22 +10,15 @@
 		D21BCE061B98DF2E00F8CD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */; };
 		D21BCE081B98DF2E00F8CD41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE071B98DF2E00F8CD41 /* Images.xcassets */; };
 		D21BCE0B1B98DF2E00F8CD41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE091B98DF2E00F8CD41 /* MainMenu.xib */; };
-		D21BCE171B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */; };
 		D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38731BDA7F9400577D1D /* Extensions.swift */; };
 		D2AF387E1BDA935A00577D1D /* MainPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */; };
 		D2AF387F1BDA935A00577D1D /* MainPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */; };
+		D2AF38811BDAAD3100577D1D /* MainPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38801BDAAD3100577D1D /* MainPopupViewModel.swift */; };
+		D2AF38851BDAAD6200577D1D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38841BDAAD6200577D1D /* BaseViewModel.swift */; };
+		D2AF38871BDAAD9100577D1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38861BDAAD9100577D1D /* BaseViewController.swift */; };
+		D2AF38891BDAADAC00577D1D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38881BDAADAC00577D1D /* Logger.swift */; };
 		F0289AF090F6BAF52C9779C3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D517F73B6406B96621A055B1 /* Pods.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D21BCE111B98DF2E00F8CD41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D21BCDF81B98DF2E00F8CD41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D21BCDFF1B98DF2E00F8CD41;
-			remoteInfo = StatusBarPomodoro;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		51A20D13ABAB0E367C34ADFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,12 +28,15 @@
 		D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D21BCE071B98DF2E00F8CD41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D21BCE0A1B98DF2E00F8CD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D21BCE101B98DF2E00F8CD41 /* StatusBarPomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusBarPomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21BCE151B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPomodoroTests.swift; sourceTree = "<group>"; };
 		D2AF38731BDA7F9400577D1D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
 		D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopupViewController.swift; path = Source/View/MainPopupViewController.swift; sourceTree = "<group>"; };
 		D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopupViewController.xib; path = Source/View/MainPopupViewController.xib; sourceTree = "<group>"; };
+		D2AF38801BDAAD3100577D1D /* MainPopupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopupViewModel.swift; path = Source/ViewModel/MainPopupViewModel.swift; sourceTree = "<group>"; };
+		D2AF38841BDAAD6200577D1D /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModel.swift; path = Source/Global/BaseClasses/BaseViewModel.swift; sourceTree = "<group>"; };
+		D2AF38861BDAAD9100577D1D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Source/Global/BaseClasses/BaseViewController.swift; sourceTree = "<group>"; };
+		D2AF38881BDAADAC00577D1D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Global/Logger.swift; sourceTree = "<group>"; };
 		D517F73B6406B96621A055B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,13 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0289AF090F6BAF52C9779C3 /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D21BCE0D1B98DF2E00F8CD41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */,
-				D21BCE101B98DF2E00F8CD41 /* StatusBarPomodoroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +127,7 @@
 		D2AF38721BDA7CA200577D1D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF38821BDAAD3B00577D1D /* Global */,
 				D2AF38771BDA861900577D1D /* Service */,
 				D2AF38761BDA861300577D1D /* ViewModel */,
 				D2AF38751BDA860B00577D1D /* View */,
@@ -160,6 +149,7 @@
 		D2AF38761BDA861300577D1D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF38801BDAAD3100577D1D /* MainPopupViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -169,6 +159,24 @@
 			children = (
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		D2AF38821BDAAD3B00577D1D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF38831BDAAD4A00577D1D /* BaseClasses */,
+				D2AF38881BDAADAC00577D1D /* Logger.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		D2AF38831BDAAD4A00577D1D /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF38841BDAAD6200577D1D /* BaseViewModel.swift */,
+				D2AF38861BDAAD9100577D1D /* BaseViewController.swift */,
+			);
+			name = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,24 +202,6 @@
 			productReference = D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D21BCE0F1B98DF2E00F8CD41 /* StatusBarPomodoroTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D21BCE1D1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoroTests" */;
-			buildPhases = (
-				D21BCE0C1B98DF2E00F8CD41 /* Sources */,
-				D21BCE0D1B98DF2E00F8CD41 /* Frameworks */,
-				D21BCE0E1B98DF2E00F8CD41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D21BCE121B98DF2E00F8CD41 /* PBXTargetDependency */,
-			);
-			name = StatusBarPomodoroTests;
-			productName = StatusBarPomodoroTests;
-			productReference = D21BCE101B98DF2E00F8CD41 /* StatusBarPomodoroTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,10 +213,6 @@
 				TargetAttributes = {
 					D21BCDFF1B98DF2E00F8CD41 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					D21BCE0F1B98DF2E00F8CD41 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = D21BCDFF1B98DF2E00F8CD41;
 					};
 				};
 			};
@@ -244,7 +230,6 @@
 			projectRoot = "";
 			targets = (
 				D21BCDFF1B98DF2E00F8CD41 /* StatusBarPomodoro */,
-				D21BCE0F1B98DF2E00F8CD41 /* StatusBarPomodoroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,13 +242,6 @@
 				D21BCE081B98DF2E00F8CD41 /* Images.xcassets in Resources */,
 				D21BCE0B1B98DF2E00F8CD41 /* MainMenu.xib in Resources */,
 				D2AF387F1BDA935A00577D1D /* MainPopupViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D21BCE0E1B98DF2E00F8CD41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,29 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AF38811BDAAD3100577D1D /* MainPopupViewModel.swift in Sources */,
+				D2AF38851BDAAD6200577D1D /* BaseViewModel.swift in Sources */,
 				D2AF387E1BDA935A00577D1D /* MainPopupViewController.swift in Sources */,
 				D21BCE061B98DF2E00F8CD41 /* AppDelegate.swift in Sources */,
+				D2AF38891BDAADAC00577D1D /* Logger.swift in Sources */,
 				D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D21BCE0C1B98DF2E00F8CD41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D21BCE171B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift in Sources */,
+				D2AF38871BDAAD9100577D1D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D21BCE121B98DF2E00F8CD41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D21BCDFF1B98DF2E00F8CD41 /* StatusBarPomodoro */;
-			targetProxy = D21BCE111B98DF2E00F8CD41 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D21BCE091B98DF2E00F8CD41 /* MainMenu.xib */ = {
@@ -462,42 +428,6 @@
 			};
 			name = Release;
 		};
-		D21BCE1E1B98DF2E00F8CD41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StatusBarPomodoroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusBarPomodoro.app/Contents/MacOS/StatusBarPomodoro";
-			};
-			name = Debug;
-		};
-		D21BCE1F1B98DF2E00F8CD41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StatusBarPomodoroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusBarPomodoro.app/Contents/MacOS/StatusBarPomodoro";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -515,15 +445,6 @@
 			buildConfigurations = (
 				D21BCE1B1B98DF2E00F8CD41 /* Debug */,
 				D21BCE1C1B98DF2E00F8CD41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D21BCE1D1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D21BCE1E1B98DF2E00F8CD41 /* Debug */,
-				D21BCE1F1B98DF2E00F8CD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

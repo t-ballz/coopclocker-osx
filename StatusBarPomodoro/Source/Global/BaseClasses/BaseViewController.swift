@@ -1,5 +1,5 @@
 //
-//  MainPopupViewController.swift
+//  BaseViewController.swift
 //  StatusBarPomodoro
 //
 //  Created by TaileS Ballz on 23/10/15.
@@ -8,19 +8,18 @@
 
 import Cocoa
 
-class MainPopupViewController: BaseViewController
+class BaseViewController: NSViewController
 {
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
     }
     
-    override func viewDidAppear()
+    override func viewWillAppear()
     {
-        super.viewDidAppear()
-        
-        
+        super.viewWillAppear()
+        Logger.log("ViewController view appear: \(self.dynamicType.description())")
     }
     
 }

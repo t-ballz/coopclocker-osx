@@ -48,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     
 }
 
-class StatusItemViewModel
+class StatusItemViewModel : BaseViewModel
 {
     let imagePosition = Variable<NSCellImagePosition>(.ImageLeft)
     let title = Variable<String>("")
@@ -57,15 +57,16 @@ class StatusItemViewModel
     
     private var popOver = NSPopover()
     
-    init()
+    override init()
     {
+        super.init()
+        
         let image = NSImage(named: "ic_error")
         image?.size = NSMakeSize(20, 20)
         let image2 = NSImage(named: "ic_error_outline")
         image2?.size = NSMakeSize(20, 20)
         
         popOver.contentViewController = MainPopupViewController(nibName: "MainPopupViewController", bundle: nil)
-        popOver.behavior = NSPopoverBehavior.Transient
          
         self.title <~ "lolomg"
         self.image <~ image
