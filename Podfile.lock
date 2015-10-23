@@ -1,0 +1,27 @@
+PODS:
+  - CryptoSwift (0.0.13)
+  - RxCocoa (1.9.1):
+    - RxSwift (~> 1.0)
+  - RxSwift (1.9.1)
+
+DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `swift12`)
+  - RxCocoa (~> 1.9)
+  - RxSwift (~> 1.9)
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: swift12
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: dc83ce9087e00017e34427c55801e20162f22d5c
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+SPEC CHECKSUMS:
+  CryptoSwift: 33e2ba400d514a054c69e9f9f6c08a992e42f91c
+  RxCocoa: b6665f77023bbdf428b92aa3338078e1e6bac39a
+  RxSwift: 546de2efb7f97f748f6c637d00846d4dd8600f62
+
+COCOAPODS: 0.39.0

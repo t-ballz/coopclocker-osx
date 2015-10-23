@@ -11,6 +11,10 @@
 		D21BCE081B98DF2E00F8CD41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE071B98DF2E00F8CD41 /* Images.xcassets */; };
 		D21BCE0B1B98DF2E00F8CD41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE091B98DF2E00F8CD41 /* MainMenu.xib */; };
 		D21BCE171B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */; };
+		D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38731BDA7F9400577D1D /* Extensions.swift */; };
+		D2AF387E1BDA935A00577D1D /* MainPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */; };
+		D2AF387F1BDA935A00577D1D /* MainPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */; };
+		F0289AF090F6BAF52C9779C3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D517F73B6406B96621A055B1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A20D13ABAB0E367C34ADFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		57FDFB9FCAE35DC4F3A034D3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21BCE041B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,10 @@
 		D21BCE101B98DF2E00F8CD41 /* StatusBarPomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusBarPomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21BCE151B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPomodoroTests.swift; sourceTree = "<group>"; };
+		D2AF38731BDA7F9400577D1D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
+		D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopupViewController.swift; path = Source/View/MainPopupViewController.swift; sourceTree = "<group>"; };
+		D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopupViewController.xib; path = Source/View/MainPopupViewController.xib; sourceTree = "<group>"; };
+		D517F73B6406B96621A055B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0289AF090F6BAF52C9779C3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1496AA5A43EF9E8F4A3E6378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D517F73B6406B96621A055B1 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98F7B46B121715EC84A156A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57FDFB9FCAE35DC4F3A034D3 /* Pods.debug.xcconfig */,
+				51A20D13ABAB0E367C34ADFE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D21BCDF71B98DF2E00F8CD41 = {
 			isa = PBXGroup;
 			children = (
 				D21BCE021B98DF2E00F8CD41 /* StatusBarPomodoro */,
 				D21BCE131B98DF2E00F8CD41 /* StatusBarPomodoroTests */,
 				D21BCE011B98DF2E00F8CD41 /* Products */,
+				98F7B46B121715EC84A156A4 /* Pods */,
+				1496AA5A43EF9E8F4A3E6378 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +103,9 @@
 		D21BCE021B98DF2E00F8CD41 /* StatusBarPomodoro */ = {
 			isa = PBXGroup;
 			children = (
-				D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */,
 				D21BCE071B98DF2E00F8CD41 /* Images.xcassets */,
 				D21BCE091B98DF2E00F8CD41 /* MainMenu.xib */,
+				D2AF38721BDA7CA200577D1D /* Source */,
 				D21BCE031B98DF2E00F8CD41 /* Supporting Files */,
 			);
 			path = StatusBarPomodoro;
@@ -106,6 +136,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2AF38721BDA7CA200577D1D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF38771BDA861900577D1D /* Service */,
+				D2AF38761BDA861300577D1D /* ViewModel */,
+				D2AF38751BDA860B00577D1D /* View */,
+				D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */,
+				D2AF38731BDA7F9400577D1D /* Extensions.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D2AF38751BDA860B00577D1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */,
+				D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D2AF38761BDA861300577D1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2AF38771BDA861900577D1D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21BCE1A1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoro" */;
 			buildPhases = (
+				346149964E948F69B8349E42 /* Check Pods Manifest.lock */,
 				D21BCDFC1B98DF2E00F8CD41 /* Sources */,
 				D21BCDFD1B98DF2E00F8CD41 /* Frameworks */,
 				D21BCDFE1B98DF2E00F8CD41 /* Resources */,
+				49EB0EC261FFDAEE7D0E7942 /* Embed Pods Frameworks */,
+				506B7729772FB322D4A9F93B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +256,7 @@
 			files = (
 				D21BCE081B98DF2E00F8CD41 /* Images.xcassets in Resources */,
 				D21BCE0B1B98DF2E00F8CD41 /* MainMenu.xib in Resources */,
+				D2AF387F1BDA935A00577D1D /* MainPopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +269,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		346149964E948F69B8349E42 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49EB0EC261FFDAEE7D0E7942 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		506B7729772FB322D4A9F93B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D21BCDFC1B98DF2E00F8CD41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AF387E1BDA935A00577D1D /* MainPopupViewController.swift in Sources */,
 				D21BCE061B98DF2E00F8CD41 /* AppDelegate.swift in Sources */,
+				D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +440,7 @@
 		};
 		D21BCE1B1B98DF2E00F8CD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FDFB9FCAE35DC4F3A034D3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -332,6 +452,7 @@
 		};
 		D21BCE1C1B98DF2E00F8CD41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A20D13ABAB0E367C34ADFE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -396,6 +517,7 @@
 				D21BCE1C1B98DF2E00F8CD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21BCE1D1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +526,7 @@
 				D21BCE1F1B98DF2E00F8CD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
