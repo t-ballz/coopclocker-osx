@@ -30,3 +30,8 @@ func <~<T: Any>(inout member: T, variable: Variable<T>) -> Disposable
 {
     return variable >- subscribeNext { member = $0 }
 }
+
+func <~<T: Any>(inout member: T, signal: Observable<T>) -> Disposable
+{
+    return signal >- subscribeNext { member = $0 }
+}

@@ -17,6 +17,8 @@
 		D2AF38851BDAAD6200577D1D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38841BDAAD6200577D1D /* BaseViewModel.swift */; };
 		D2AF38871BDAAD9100577D1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38861BDAAD9100577D1D /* BaseViewController.swift */; };
 		D2AF38891BDAADAC00577D1D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38881BDAADAC00577D1D /* Logger.swift */; };
+		D2AF388B1BDACCC700577D1D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF388A1BDACCC700577D1D /* TimerView.swift */; };
+		D2AF388D1BDACE3900577D1D /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF388C1BDACE3900577D1D /* GlobalFunctions.swift */; };
 		F0289AF090F6BAF52C9779C3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D517F73B6406B96621A055B1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		D2AF38841BDAAD6200577D1D /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModel.swift; path = Source/Global/BaseClasses/BaseViewModel.swift; sourceTree = "<group>"; };
 		D2AF38861BDAAD9100577D1D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Source/Global/BaseClasses/BaseViewController.swift; sourceTree = "<group>"; };
 		D2AF38881BDAADAC00577D1D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Global/Logger.swift; sourceTree = "<group>"; };
+		D2AF388A1BDACCC700577D1D /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = Source/View/TimerView.swift; sourceTree = "<group>"; };
+		D2AF388C1BDACE3900577D1D /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = Source/Global/GlobalFunctions.swift; sourceTree = "<group>"; };
 		D517F73B6406B96621A055B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +146,7 @@
 			children = (
 				D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */,
 				D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */,
+				D2AF388A1BDACCC700577D1D /* TimerView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			children = (
 				D2AF38831BDAAD4A00577D1D /* BaseClasses */,
 				D2AF38881BDAADAC00577D1D /* Logger.swift */,
+				D2AF388C1BDACE3900577D1D /* GlobalFunctions.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 				D21BCE061B98DF2E00F8CD41 /* AppDelegate.swift in Sources */,
 				D2AF38891BDAADAC00577D1D /* Logger.swift in Sources */,
 				D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */,
+				D2AF388B1BDACCC700577D1D /* TimerView.swift in Sources */,
 				D2AF38871BDAAD9100577D1D /* BaseViewController.swift in Sources */,
+				D2AF388D1BDACE3900577D1D /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

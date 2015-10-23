@@ -7,19 +7,41 @@
 //
 
 import Cocoa
+import RxSwift
+import RxCocoa
 
 class MainPopupViewController: BaseViewController
 {
-
-    override func viewDidLoad()
+    var mainPopupViewModel: MainPopupViewModel = MainPopupViewModel()
+    override var viewModel: MainPopupViewModel
     {
-        super.viewDidLoad()
+        get { return self.mainPopupViewModel }
     }
     
-    override func viewDidAppear()
+    @IBOutlet weak var settingsButton: NSButton!
+    @IBOutlet weak var networkButton: NSButton!
+    @IBOutlet weak var newTaskButton: NSButton!
+    @IBOutlet weak var popupButton: NSButton!
+
+    @IBOutlet weak var usernameLabel: NSTextField!
+    @IBOutlet weak var servernameLabel: NSTextField!
+    @IBOutlet weak var organizationLabel: NSTextField!
+    @IBOutlet weak var projectLabel: NSTextField!
+    @IBOutlet weak var taskLabel: NSTextField!
+    @IBOutlet weak var timerLabel: NSTextField!
+    
+    @IBOutlet weak var taskTableView: NSScrollView!
+    @IBOutlet weak var timerView: TimerView!
+    
+    
+    override func bindViewModel()
     {
-        super.viewDidAppear()
-        
+        self.usernameLabel.stringValue <~ self.viewModel.userName
+        self.servernameLabel.stringValue <~ self.viewModel.serverName
+        self.organizationLabel.stringValue <~ self.viewModel.organizationName
+        self.projectLabel.stringValue <~ self.viewModel.projectName
+        self.taskLabel.stringValue <~ self.viewModel.taskName
+        self.timerLabel.stringValue <~ combineLatest(self.viewModel.timerMinues, self.viewModel.timerSeconds) { minutes, seconds in String(format: "%02d:%02d", minutes, seconds) }
         
     }
     

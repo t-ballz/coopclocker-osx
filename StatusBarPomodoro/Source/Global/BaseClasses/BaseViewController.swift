@@ -10,16 +10,27 @@ import Cocoa
 
 class BaseViewController: NSViewController
 {
+    var viewModel: BaseViewModel
+    {
+        get { MUSTOVERRIDE(); return BaseViewModel() }
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        self.bindViewModel()
     }
     
     override func viewWillAppear()
     {
         super.viewWillAppear()
         Logger.log("ViewController view appear: \(self.dynamicType.description())")
+    }
+    
+    func bindViewModel()
+    {
+        MUSTOVERRIDE()
     }
     
 }
