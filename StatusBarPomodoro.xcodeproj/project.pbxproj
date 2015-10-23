@@ -136,7 +136,6 @@
 				D2AF38761BDA861300577D1D /* ViewModel */,
 				D2AF38751BDA860B00577D1D /* View */,
 				D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */,
-				D2AF38731BDA7F9400577D1D /* Extensions.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 				D2AF38831BDAAD4A00577D1D /* BaseClasses */,
 				D2AF38881BDAADAC00577D1D /* Logger.swift */,
 				D2AF388C1BDACE3900577D1D /* GlobalFunctions.swift */,
+				D2AF38731BDA7F9400577D1D /* Extensions.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";

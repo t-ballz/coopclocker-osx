@@ -43,6 +43,31 @@ class MainPopupViewController: BaseViewController
         self.taskLabel.stringValue <~ self.viewModel.taskName
         self.timerLabel.stringValue <~ combineLatest(self.viewModel.timerMinues, self.viewModel.timerSeconds) { minutes, seconds in String(format: "%02d:%02d", minutes, seconds) }
         
+        settingsButton.bindToHandler(self.viewModel.settingsPressed) >- subscribeNext
+        { signal in
+            signal >- subscribeCompleted {}
+        }
+        
+        self.networkButton.bindToHandler(self.viewModel.networkPressed) >- subscribeNext
+        { signal in
+            signal >- subscribeCompleted {}
+        }
+        
+        self.newTaskButton.bindToHandler(self.viewModel.newTaskPressed) >- subscribeNext
+        { signal in
+            signal >- subscribeCompleted {}
+        }
+        
+        self.popupButton.bindToHandler(self.viewModel.popupPressed) >- subscribeNext
+        { signal in
+            signal >- subscribeCompleted {}
+        }
+        
+        self.timerView.clickedHandler =
+        {
+            self.viewModel.timerPressed(self.timerView) >- subscribeCompleted {}
+        }
+        
     }
     
 }

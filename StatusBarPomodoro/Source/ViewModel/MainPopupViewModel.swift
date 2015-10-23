@@ -48,13 +48,14 @@ class MainPopupViewModel : BaseViewModel
         super.init()
     }
     
-    func statusPressed(sender: NSView) -> Observable<Void>
+    func networkPressed(sender: NSView) -> Observable<Void>
     {
         return create
         { sink in
             
             Logger.log("Status indicator pressed.")
             
+            sendCompleted(sink)
             return NopDisposable.instance
         }
     }
@@ -66,28 +67,31 @@ class MainPopupViewModel : BaseViewModel
             
             Logger.log("Settings button pressed.")
             
+            sendCompleted(sink)
             return NopDisposable.instance
         }
     }
     
-    func popuptogglePressed(sender: NSView) -> Observable<Void>
+    func popupPressed(sender: NSView) -> Observable<Void>
     {
         return create
         { sink in
             
             Logger.log("Popup toggle button pressed.")
             
+            sendCompleted(sink)
             return NopDisposable.instance
         }
     }
     
-    func restartPressed(sender: NSView) -> Observable<Void>
+    func newTaskPressed(sender: NSView) -> Observable<Void>
     {
         return create
         { sink in
             
             Logger.log("Timer restart button pressed.")
             
+            sendCompleted(sink)
             return NopDisposable.instance
         }
     }
@@ -99,6 +103,7 @@ class MainPopupViewModel : BaseViewModel
             
             Logger.log("Timer pressed.")
             
+            sendCompleted(sink)
             return NopDisposable.instance
         }
     }

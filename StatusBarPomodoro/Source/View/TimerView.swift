@@ -9,11 +9,16 @@
 import Cocoa
 
 class TimerView: NSView {
+    var clickedHandler: () -> () = {}
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
 
         
+    }
+    
+    override func mouseUp(theEvent: NSEvent) {
+        self.clickedHandler()
     }
     
 }

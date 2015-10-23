@@ -8,6 +8,7 @@
 
 import Cocoa
 import RxSwift
+import RxCocoa
 
 extension NSView
 {
@@ -19,6 +20,8 @@ extension NSView
     }
     
 }
+
+// RX helpers
 
 infix operator <~ {}
 func <~<T: Any>(variable: Variable<T>, value: T)
@@ -34,4 +37,12 @@ func <~<T: Any>(inout member: T, variable: Variable<T>) -> Disposable
 func <~<T: Any>(inout member: T, signal: Observable<T>) -> Disposable
 {
     return signal >- subscribeNext { member = $0 }
+}
+
+extension NSButton
+{
+    func bindToHandler<T>(handler: (NSView) -> Observable<T>) -> Observable<Observable<T>>
+    {
+        return self.rx_tap >- map { handler(self) }
+    }
 }
