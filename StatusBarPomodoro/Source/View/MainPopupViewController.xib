@@ -17,7 +17,6 @@
                 <outlet property="settingsButton" destination="704-3Z-g4J" id="VUm-dW-bRO"/>
                 <outlet property="taskLabel" destination="tLf-bm-qk1" id="6bX-lv-QwM"/>
                 <outlet property="taskTableView" destination="Duc-nj-FkA" id="gOo-0e-mGS"/>
-                <outlet property="timerLabel" destination="gYO-95-Txr" id="G5R-wA-iUo"/>
                 <outlet property="timerView" destination="6hb-oI-urn" id="bmc-d1-lmd"/>
                 <outlet property="usernameLabel" destination="E9y-QA-hIj" id="CkY-GK-EIQ"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
@@ -25,12 +24,12 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="354" height="263"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="264"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="hKz-yd-BCM" userLabel="Top bar">
-                    <rect key="frame" x="0.0" y="228" width="354" height="35"/>
+                    <rect key="frame" x="0.0" y="229" width="354" height="35"/>
                     <subviews>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="704-3Z-g4J" userLabel="Status button">
                             <rect key="frame" x="10" y="5" width="25" height="25"/>
@@ -86,16 +85,16 @@
                     </constraints>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="jP9-S9-pRz" userLabel="Left pane">
-                    <rect key="frame" x="0.0" y="0.0" width="115" height="220"/>
+                    <rect key="frame" x="0.0" y="0.0" width="115" height="221"/>
                     <subviews>
                         <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" findBarPosition="belowContent" translatesAutoresizingMaskIntoConstraints="NO" id="Duc-nj-FkA" userLabel="Previous tasks tableView">
-                            <rect key="frame" x="0.0" y="0.0" width="115" height="220"/>
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="221"/>
                             <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Czr-99-ERS">
                                 <rect key="frame" x="1" y="17" width="238" height="117"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <tableView appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" viewBased="YES" id="a2c-fj-7D7">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -139,11 +138,11 @@
                                 </subviews>
                                 <nil key="backgroundColor"/>
                             </clipView>
-                            <scroller key="horizontalScroller" hidden="YES" appearanceType="vibrantLight" verticalHuggingPriority="750" horizontal="YES" id="ox9-Sv-kMF">
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ox9-Sv-kMF">
                                 <rect key="frame" x="1" y="119" width="223" height="15"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
-                            <scroller key="verticalScroller" hidden="YES" appearanceType="vibrantLight" verticalHuggingPriority="750" horizontal="NO" id="1Dd-Ya-AM0">
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1Dd-Ya-AM0">
                                 <rect key="frame" x="224" y="17" width="15" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
@@ -157,10 +156,10 @@
                     </constraints>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="RjY-HI-oKm" userLabel="Right pane">
-                    <rect key="frame" x="123" y="0.0" width="231" height="220"/>
+                    <rect key="frame" x="123" y="0.0" width="231" height="221"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-R8-GYw" userLabel="Organization label">
-                            <rect key="frame" x="8" y="190" width="104" height="20"/>
+                            <rect key="frame" x="8" y="191" width="104" height="20"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="apx-1r-360">
                                 <font key="font" size="13" name="HelveticaNeue-Light"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -168,7 +167,7 @@
                             </textFieldCell>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7s-PS-ipc" userLabel="Project label">
-                            <rect key="frame" x="118" y="190" width="105" height="20"/>
+                            <rect key="frame" x="118" y="191" width="105" height="20"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="fcx-sM-8gS">
                                 <font key="font" size="13" name="HelveticaNeue-Light"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -176,7 +175,7 @@
                             </textFieldCell>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tLf-bm-qk1" userLabel="Task label">
-                            <rect key="frame" x="8" y="160" width="215" height="20"/>
+                            <rect key="frame" x="8" y="161" width="215" height="20"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="H4f-Zu-QQU">
                                 <font key="font" size="13" name="HelveticaNeue-Light"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -195,19 +194,11 @@
                             </buttonCell>
                         </button>
                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="6hb-oI-urn" userLabel="Timer view" customClass="TimerView" customModule="StatusBarPomodoro" customModuleProvider="target">
-                            <rect key="frame" x="80" y="10" width="141" height="140"/>
+                            <rect key="frame" x="80" y="10" width="141" height="141"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="6hb-oI-urn" secondAttribute="height" multiplier="1:1" id="c4t-Ua-ifr"/>
                             </constraints>
                         </customView>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-95-Txr">
-                            <rect key="frame" x="125" y="68" width="51" height="24"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Label" id="EhL-xD-J43">
-                                <font key="font" size="20" name="HelveticaNeue-Light"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="yX1-Hi-R3X" userLabel="Restart button">
                             <rect key="frame" x="45" y="10" width="25" height="25"/>
                             <constraints>
@@ -225,7 +216,6 @@
                         <constraint firstAttribute="bottom" secondItem="3cU-8U-B9z" secondAttribute="bottom" constant="10" id="Aqu-ev-WGr"/>
                         <constraint firstItem="3cU-8U-B9z" firstAttribute="leading" secondItem="RjY-HI-oKm" secondAttribute="leading" constant="10" id="Cyx-10-7xd"/>
                         <constraint firstAttribute="bottom" secondItem="6hb-oI-urn" secondAttribute="bottom" constant="10" id="Gvb-ue-fYY"/>
-                        <constraint firstItem="6hb-oI-urn" firstAttribute="centerX" secondItem="gYO-95-Txr" secondAttribute="centerX" id="HYl-IJ-tfK"/>
                         <constraint firstItem="S6P-R8-GYw" firstAttribute="leading" secondItem="RjY-HI-oKm" secondAttribute="leading" constant="10" id="N40-g2-Ed5"/>
                         <constraint firstAttribute="trailing" secondItem="6hb-oI-urn" secondAttribute="trailing" constant="10" id="N4i-et-n0R"/>
                         <constraint firstAttribute="trailing" secondItem="v7s-PS-ipc" secondAttribute="trailing" constant="10" id="Pt1-wJ-R8w"/>
@@ -236,7 +226,6 @@
                         <constraint firstItem="v7s-PS-ipc" firstAttribute="width" secondItem="S6P-R8-GYw" secondAttribute="width" id="gg5-Sv-GXJ"/>
                         <constraint firstItem="S6P-R8-GYw" firstAttribute="top" secondItem="RjY-HI-oKm" secondAttribute="top" constant="10" id="haf-oy-SlD"/>
                         <constraint firstItem="v7s-PS-ipc" firstAttribute="leading" secondItem="S6P-R8-GYw" secondAttribute="trailing" constant="10" id="jDs-HV-BkF"/>
-                        <constraint firstItem="6hb-oI-urn" firstAttribute="centerY" secondItem="gYO-95-Txr" secondAttribute="centerY" id="jis-eH-DlU"/>
                         <constraint firstItem="tLf-bm-qk1" firstAttribute="top" secondItem="S6P-R8-GYw" secondAttribute="bottom" constant="10" id="krv-kz-AN8"/>
                         <constraint firstItem="6hb-oI-urn" firstAttribute="top" secondItem="tLf-bm-qk1" secondAttribute="bottom" constant="10" id="thI-Ec-2s4"/>
                         <constraint firstItem="tLf-bm-qk1" firstAttribute="leading" secondItem="RjY-HI-oKm" secondAttribute="leading" constant="10" id="zjB-Jl-i8x"/>
@@ -256,6 +245,7 @@
                 <constraint firstAttribute="bottom" secondItem="jP9-S9-pRz" secondAttribute="bottom" id="sfy-wc-KsR"/>
                 <constraint firstAttribute="trailing" secondItem="RjY-HI-oKm" secondAttribute="trailing" id="wk2-zi-dLN"/>
             </constraints>
+            <animations/>
             <point key="canvasLocation" x="738" y="633.5"/>
         </customView>
     </objects>

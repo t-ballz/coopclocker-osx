@@ -21,7 +21,30 @@ extension NSView
     
 }
 
+extension NSDate
+{
+    func minutes_seconds() -> (Int, Int)
+    {
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(NSCalendarUnit.CalendarUnitMinute | .CalendarUnitSecond, fromDate: self)
+        return (components.minute, components.second)
+    }
+}
+
 // RX helpers
+
+extension Observable
+{
+    class func rx_return<T>(value: T) -> Observable<T>
+    {
+        return create { sink in
+            sendNext(sink, value)
+            sendCompleted(sink)
+            
+            return NopDisposable.instance
+        }
+    }
+}
 
 infix operator <~ {}
 func <~<T>(variable: Variable<T>, value: T)
@@ -29,10 +52,21 @@ func <~<T>(variable: Variable<T>, value: T)
     variable.next(value)
 }
 
+func <~<T>(variable: Variable<T>, signal: Observable<T>) -> Disposable
+{
+    return signal.subscribe(variable)
+}
+
 infix operator ~> {}
 func ~><T>(signal: Observable<T>, nextBlock:(T) -> ())
 {
     signal >- subscribeNext(nextBlock)
+}
+
+infix operator *~> {}
+func *~><T>(signal: Observable<T>, completedBlock: () -> ())
+{
+    signal >- subscribeCompleted(completedBlock)
 }
 
 extension NSButton

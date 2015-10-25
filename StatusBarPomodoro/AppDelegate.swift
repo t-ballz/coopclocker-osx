@@ -44,9 +44,9 @@ class AppDelegate: NSObject, NSApplicationDelegate
             self.statusItemViewModel.imageAlt ~> { button.alternateImage = $0 }
             self.statusItemViewModel.title ~> { button.title = $0 }
             
-            button.bindToHandler(self.statusItemViewModel.buttonPressed) >- subscribeNext
+            button.bindToHandler(self.statusItemViewModel.buttonPressed) ~>
             { signal in
-                signal >- subscribeCompleted { }
+                signal *~> { }
             }
         }
     }
@@ -60,6 +60,9 @@ class StatusItemViewModel : BaseViewModel
     let image = Variable<NSImage?>(nil)
     let imageAlt = Variable<NSImage?>(nil)
     
+    let timerMinutes = Variable<Int>(0)
+    let timerSeconds = Variable<Int>(0)
+    
     private var popOver = NSPopover()
     
     override init()
@@ -72,8 +75,10 @@ class StatusItemViewModel : BaseViewModel
         image2?.size = NSMakeSize(20, 20)
         
         popOver.contentViewController = MainPopupViewController(nibName: "MainPopupViewController", bundle: nil)
-         
-        self.title <~ "lolomg"
+        
+        let timerSignal = combineLatest(self.timerMinutes, self.timerSeconds) { minutes, seconds in String(format: "%02d:%02d", minutes, seconds) }
+        
+        self.title <~ timerSignal
         self.image <~ image
         self.imageAlt <~ image2
     }

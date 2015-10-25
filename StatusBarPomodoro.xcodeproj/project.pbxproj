@@ -10,6 +10,7 @@
 		D21BCE061B98DF2E00F8CD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */; };
 		D21BCE081B98DF2E00F8CD41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE071B98DF2E00F8CD41 /* Images.xcassets */; };
 		D21BCE0B1B98DF2E00F8CD41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21BCE091B98DF2E00F8CD41 /* MainMenu.xib */; };
+		D26FDA491BDD205E00517730 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FDA481BDD205E00517730 /* CGRectExtensions.swift */; };
 		D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF38731BDA7F9400577D1D /* Extensions.swift */; };
 		D2AF387E1BDA935A00577D1D /* MainPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */; };
 		D2AF387F1BDA935A00577D1D /* MainPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */; };
@@ -32,6 +33,7 @@
 		D21BCE0A1B98DF2E00F8CD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D21BCE151B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPomodoroTests.swift; sourceTree = "<group>"; };
+		D26FDA481BDD205E00517730 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		D2AF38731BDA7F9400577D1D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
 		D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopupViewController.swift; path = Source/View/MainPopupViewController.swift; sourceTree = "<group>"; };
 		D2AF387D1BDA935A00577D1D /* MainPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopupViewController.xib; path = Source/View/MainPopupViewController.xib; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				D2AF38881BDAADAC00577D1D /* Logger.swift */,
 				D2AF388C1BDACE3900577D1D /* GlobalFunctions.swift */,
 				D2AF38731BDA7F9400577D1D /* Extensions.swift */,
+				D26FDA481BDD205E00517730 /* CGRectExtensions.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				D2AF38891BDAADAC00577D1D /* Logger.swift in Sources */,
 				D2AF38741BDA7F9400577D1D /* Extensions.swift in Sources */,
 				D2AF388B1BDACCC700577D1D /* TimerView.swift in Sources */,
+				D26FDA491BDD205E00517730 /* CGRectExtensions.swift in Sources */,
 				D2AF38871BDAAD9100577D1D /* BaseViewController.swift in Sources */,
 				D2AF388D1BDACE3900577D1D /* GlobalFunctions.swift in Sources */,
 			);

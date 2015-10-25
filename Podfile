@@ -5,12 +5,9 @@ use_frameworks!
 pod 'RxSwift', '~> 1.9'
 pod 'RxCocoa', '~> 1.9'
 pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift', :branch => 'swift12'
+pod 'Alamofire', '~> 1.3.0'
+pod 'Argo', '~> 1.0.0'
 
 target 'StatusBarPomodoro' do
 
 end
-
-target 'StatusBarPomodoroTests' do
-
-end
-
