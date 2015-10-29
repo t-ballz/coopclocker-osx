@@ -32,6 +32,13 @@ class MainPopupViewController: BaseViewController
     @IBOutlet weak var taskTableView: NSScrollView!
     @IBOutlet weak var timerView: TimerView!
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    
+        self.taskTableView.setBorder()
+    }
+    
     override func bindViewModel()
     {
         let timerStringSignal = combineLatest(self.viewModel.timerMinutes, self.viewModel.timerSeconds) { minutes, seconds in String(format: "%02d:%02d", minutes, seconds) }

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D21BCDFF1B98DF2E00F8CD41"
-               BuildableName = "StatusBarPomodoro.app"
-               BlueprintName = "StatusBarPomodoro"
-               ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+               BuildableName = "CoopClocker-osx.app"
+               BlueprintName = "CoopClocker-osx"
+               ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "D21BCE0F1B98DF2E00F8CD41"
                BuildableName = "StatusBarPomodoroTests.xctest"
                BlueprintName = "StatusBarPomodoroTests"
-               ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+               ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "D21BCE0F1B98DF2E00F8CD41"
                BuildableName = "StatusBarPomodoroTests.xctest"
                BlueprintName = "StatusBarPomodoroTests"
-               ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+               ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D21BCDFF1B98DF2E00F8CD41"
-            BuildableName = "StatusBarPomodoro.app"
-            BlueprintName = "StatusBarPomodoro"
-            ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+            BuildableName = "CoopClocker-osx.app"
+            BlueprintName = "CoopClocker-osx"
+            ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D21BCDFF1B98DF2E00F8CD41"
-            BuildableName = "StatusBarPomodoro.app"
-            BlueprintName = "StatusBarPomodoro"
-            ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+            BuildableName = "CoopClocker-osx.app"
+            BlueprintName = "CoopClocker-osx"
+            ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D21BCDFF1B98DF2E00F8CD41"
-            BuildableName = "StatusBarPomodoro.app"
-            BlueprintName = "StatusBarPomodoro"
-            ReferencedContainer = "container:StatusBarPomodoro.xcodeproj">
+            BuildableName = "CoopClocker-osx.app"
+            BlueprintName = "CoopClocker-osx"
+            ReferencedContainer = "container:CoopClocker-osx.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

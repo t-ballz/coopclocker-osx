@@ -26,13 +26,11 @@
 /* Begin PBXFileReference section */
 		51A20D13ABAB0E367C34ADFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		57FDFB9FCAE35DC4F3A034D3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21BCE001B98DF2E00F8CD41 /* CoopClocker-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoopClocker-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21BCE041B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21BCE051B98DF2E00F8CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D21BCE071B98DF2E00F8CD41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D21BCE0A1B98DF2E00F8CD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D21BCE151B98DF2E00F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPomodoroTests.swift; sourceTree = "<group>"; };
 		D26FDA481BDD205E00517730 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		D2AF38731BDA7F9400577D1D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
 		D2AF387C1BDA935A00577D1D /* MainPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopupViewController.swift; path = Source/View/MainPopupViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +76,7 @@
 		D21BCDF71B98DF2E00F8CD41 = {
 			isa = PBXGroup;
 			children = (
-				D21BCE021B98DF2E00F8CD41 /* StatusBarPomodoro */,
-				D21BCE131B98DF2E00F8CD41 /* StatusBarPomodoroTests */,
+				D21BCE021B98DF2E00F8CD41 /* CoopClocker-osx */,
 				D21BCE011B98DF2E00F8CD41 /* Products */,
 				98F7B46B121715EC84A156A4 /* Pods */,
 				1496AA5A43EF9E8F4A3E6378 /* Frameworks */,
@@ -89,12 +86,12 @@
 		D21BCE011B98DF2E00F8CD41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */,
+				D21BCE001B98DF2E00F8CD41 /* CoopClocker-osx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D21BCE021B98DF2E00F8CD41 /* StatusBarPomodoro */ = {
+		D21BCE021B98DF2E00F8CD41 /* CoopClocker-osx */ = {
 			isa = PBXGroup;
 			children = (
 				D21BCE071B98DF2E00F8CD41 /* Images.xcassets */,
@@ -102,30 +99,13 @@
 				D2AF38721BDA7CA200577D1D /* Source */,
 				D21BCE031B98DF2E00F8CD41 /* Supporting Files */,
 			);
-			path = StatusBarPomodoro;
+			path = "CoopClocker-osx";
 			sourceTree = "<group>";
 		};
 		D21BCE031B98DF2E00F8CD41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				D21BCE041B98DF2E00F8CD41 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D21BCE131B98DF2E00F8CD41 /* StatusBarPomodoroTests */ = {
-			isa = PBXGroup;
-			children = (
-				D21BCE161B98DF2E00F8CD41 /* StatusBarPomodoroTests.swift */,
-				D21BCE141B98DF2E00F8CD41 /* Supporting Files */,
-			);
-			path = StatusBarPomodoroTests;
-			sourceTree = "<group>";
-		};
-		D21BCE141B98DF2E00F8CD41 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D21BCE151B98DF2E00F8CD41 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D21BCDFF1B98DF2E00F8CD41 /* StatusBarPomodoro */ = {
+		D21BCDFF1B98DF2E00F8CD41 /* CoopClocker-osx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D21BCE1A1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoro" */;
+			buildConfigurationList = D21BCE1A1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "CoopClocker-osx" */;
 			buildPhases = (
 				346149964E948F69B8349E42 /* Check Pods Manifest.lock */,
 				D21BCDFC1B98DF2E00F8CD41 /* Sources */,
@@ -206,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = StatusBarPomodoro;
+			name = "CoopClocker-osx";
 			productName = StatusBarPomodoro;
-			productReference = D21BCE001B98DF2E00F8CD41 /* StatusBarPomodoro.app */;
+			productReference = D21BCE001B98DF2E00F8CD41 /* CoopClocker-osx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D21BCDFB1B98DF2E00F8CD41 /* Build configuration list for PBXProject "StatusBarPomodoro" */;
+			buildConfigurationList = D21BCDFB1B98DF2E00F8CD41 /* Build configuration list for PBXProject "CoopClocker-osx" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D21BCDFF1B98DF2E00F8CD41 /* StatusBarPomodoro */,
+				D21BCDFF1B98DF2E00F8CD41 /* CoopClocker-osx */,
 			);
 		};
 /* End PBXProject section */
@@ -422,9 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = StatusBarPomodoro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoopClocker-osx/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CoopClocker-osx";
 			};
 			name = Debug;
 		};
@@ -434,16 +414,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = StatusBarPomodoro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoopClocker-osx/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CoopClocker-osx";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D21BCDFB1B98DF2E00F8CD41 /* Build configuration list for PBXProject "StatusBarPomodoro" */ = {
+		D21BCDFB1B98DF2E00F8CD41 /* Build configuration list for PBXProject "CoopClocker-osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D21BCE181B98DF2E00F8CD41 /* Debug */,
@@ -452,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D21BCE1A1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "StatusBarPomodoro" */ = {
+		D21BCE1A1B98DF2E00F8CD41 /* Build configuration list for PBXNativeTarget "CoopClocker-osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D21BCE1B1B98DF2E00F8CD41 /* Debug */,

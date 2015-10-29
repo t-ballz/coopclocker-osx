@@ -8,6 +8,6 @@ pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift', :bran
 pod 'Alamofire', '~> 1.3.0'
 pod 'Argo', '~> 1.0.0'
 
-target 'StatusBarPomodoro' do
+target 'CoopClocker-osx' do
 
 end

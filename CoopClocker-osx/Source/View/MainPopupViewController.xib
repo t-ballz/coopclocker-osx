@@ -158,16 +158,16 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="RjY-HI-oKm" userLabel="Right pane">
                     <rect key="frame" x="123" y="0.0" width="231" height="221"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-R8-GYw" userLabel="Organization label">
-                            <rect key="frame" x="8" y="191" width="104" height="20"/>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-R8-GYw" userLabel="Organization label">
+                            <rect key="frame" x="8" y="191" width="105" height="20"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="apx-1r-360">
                                 <font key="font" size="13" name="HelveticaNeue-Light"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7s-PS-ipc" userLabel="Project label">
-                            <rect key="frame" x="118" y="191" width="105" height="20"/>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v7s-PS-ipc" userLabel="Project label">
+                            <rect key="frame" x="119" y="191" width="104" height="20"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="fcx-sM-8gS">
                                 <font key="font" size="13" name="HelveticaNeue-Light"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
