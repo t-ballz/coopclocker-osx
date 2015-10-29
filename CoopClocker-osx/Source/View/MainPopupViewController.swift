@@ -29,14 +29,18 @@ class MainPopupViewController: BaseViewController
     @IBOutlet weak var projectLabel: NSTextField!
     @IBOutlet weak var taskLabel: NSTextField!
     
-    @IBOutlet weak var taskTableView: NSScrollView!
+    
+    @IBOutlet weak var taskTableView: NSTableView!
     @IBOutlet weak var timerView: TimerView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
     
-        self.taskTableView.setBorder()
+        self.taskTableView.sizeLastColumnToFit()
+        self.taskTableView.setDelegate(self)
+        self.taskTableView.setDataSource(self)
+        self.taskTableView.setBorder(width: 1.0, color: NSColor.grayColor())
     }
     
     override func bindViewModel()
@@ -76,6 +80,27 @@ class MainPopupViewController: BaseViewController
             self.viewModel.timerPressed(self.timerView) *~> {}
         }
         
+    }
+}
+
+extension MainPopupViewController : NSTableViewDataSource, NSTableViewDelegate {
+    
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return 500
+    }
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cell = tableView.makeViewWithIdentifier("twoLabelCell", owner: self) as? NSView
+        
+        cell?.layer?.backgroundColor = (row % 2 == 0) ? NSColor.lightGrayColor().CGColor : NSColor.clearColor().CGColor
+        
+        let label1 = cell?.viewWithTagAs(1) as! NSTextField
+        let label2 = cell?.viewWithTagAs(2) as! NSTextField
+        
+        label1.stringValue = "Task name"
+        label2.stringValue = "00:00"
+        
+        return cell
     }
     
 }

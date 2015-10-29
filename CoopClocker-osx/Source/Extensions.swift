@@ -19,6 +19,10 @@ extension NSView
         self.layer?.borderColor = color.CGColor
     }
     
+    func viewWithTagAs<T:NSView>(tag: Int) -> T? {
+        return self.viewWithTag(tag) as? T
+    }
+    
 }
 
 extension NSDate

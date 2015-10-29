@@ -15,6 +15,7 @@ class MainPopupViewModel : BaseViewModel
     class WorkListEntry
     {
         // TODO
+        
     }
     
     enum OperationStatus
