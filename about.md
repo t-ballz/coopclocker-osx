@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+CoopClocker is a team-oriented countdown-based time-tracking tool.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+It's a small personal project I've started to create a tool for myself and my friends to use. I plan to keep adding to it as I go.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+This is the first phase of the project: a small OSX status-bar app, where I can learn about OSX development and test-drive the idea.
