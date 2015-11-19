@@ -5,4 +5,5 @@ This is a personal adventure in coding a network-backed tool I'd really like to 
 
 # Linkage
 
-Public Trello board: https://trello.com/b/npBsYREo/plans-and-progresses
+#### [Blog](http://t-ballz.github.io/coopclocker-osx/)
+#### [Public Trello board](https://trello.com/b/npBsYREo/plans-and-progresses)
