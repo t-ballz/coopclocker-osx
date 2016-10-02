@@ -1,2 +1,10 @@
-_site
-.sass-cache
+# Created by https://www.gitignore.io/api/jekyll
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
+
+### Added by TBallz
+
+Gemfile.lock
